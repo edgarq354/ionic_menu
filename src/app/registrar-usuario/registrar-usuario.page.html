@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>registrar_usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content  >
+  <form  #form="ngForm" (ngSubmit)="register(form)">
+    <ion-grid>
+      <ion-row   justify-content-center>
+        <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+          <div text-center>
+            <h3>Registrare ahora</h3>
+          </div>
+          <div padding>
+            <ion-item>
+              <ion-input  name="nombre" type="text" placeholder="Nombre" ngModel required></ion-input>
+            </ion-item>
+             <ion-item>
+              <ion-input  name="apellido" type="text" placeholder="Apellido" ngModel required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="correo" type="email" placeholder="correo@servidor.com" ngModel></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="celular" type="celular" placeholder="Celular" ngModel required></ion-input>
+            </ion-item>
+            
+          </div>
+          <div padding>
+            <ion-button  size="large" type="submit"  color="success" expand="block">Registrar</ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+</ion-content> 
